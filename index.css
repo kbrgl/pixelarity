@@ -9,9 +9,6 @@ html, body {
 h1.is-size-1, h2.is-size-2 {
     font-weight: lighter;
 }
-.navbar {
-    height: 5rem;
-}
 .navbar-item {
     color: #4b4d6e;
 }
@@ -22,21 +19,26 @@ a.navbar-item:hover {
     background-color: inherit;
     color: inherit;
 }
-.navbar-brand-logo {
-    vertical-align: middle;
-    height: 50px;
-}
 .navbar-brand-name {
     margin-left: 15px;
+}
+.navbar-burger {
+    height: auto;
+}
+.navbar-burger:hover {
+    background-color: inherit;
+}
+.navbar-menu {
+    box-shadow: none;
 }
 .hero-body {
     padding: 3rem 1.5rem 0;
 }
+.hero-body img {
+    margin: 2rem 0;
+}
 .hero-lead {
     line-height: 1em;
-}
-.hero img {
-    margin: 2rem 0;
 }
 .separator {
     width: 65%;
@@ -101,4 +103,7 @@ code {
 .call-to-action a {
     color: inherit;
     border-bottom: 2px solid #4b4d6e;
+}
+.youtube {
+    margin-top: 1rem;
 }

@@ -2,10 +2,21 @@
 <html>
     <head>
         <title>Pixelarity | The Image Editing Plugin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
         <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Overpass:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <script src="https://use.fontawesome.com/027943e941.js" async defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var e = document.querySelector(".navbar-burger");
+                var t = document.querySelector(".navbar-menu");
+                e.onclick = function () {
+                    e.classList.toggle("is-active");
+                    t.classList.toggle("is-active");
+                }
+            });
+        </script>
     </head>
     <body>
         <div class="container">
@@ -16,9 +27,14 @@
                             <div class="navbar">
                                 <div class="navbar-brand">
                                     <a href="/" class="navbar-item">
-                                    <img class="navbar-brand-logo" src="assets/logo.png" alt="Logo">
-                                    <span class="navbar-brand-name">Pixelarity</span>
-                                </a>
+                                        <img src="assets/logo.png" alt="Logo">
+                                        <span class="navbar-brand-name">Pixelarity</span>
+                                    </a>
+                                    <div class="navbar-burger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
                                 </div>
                                 <div class="navbar-menu">
                                     <div class="navbar-end">
@@ -47,6 +63,7 @@
                     </div>
                     <div class="section has-text-centered">
                         <h2 class="is-size-2">Features</h2>
+                        <iframe class="youtube" width="100%" height="535" src="https://www.youtube.com/embed/4fY12wLG_No" frameborder="0" allowfullscreen></iframe>
                         <div class="features tile is-ancestor">
                             <div class="tile is-vertical is-parent">
                                 <article class="tile is-child">
